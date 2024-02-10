@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  button {
+    background-color: gray;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  p.user-answer {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .custom-head {
+    font-family: 'Caveat', cursive;
+  }
+
+  header {
+    background-color: #fff;
+}
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    main {
+      padding: 10px;
+    }
+  }

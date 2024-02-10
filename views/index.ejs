@@ -1,0 +1,43 @@
+<%- include("partials/header.ejs") %>
+
+  <h1>Welcome To A Mind-Teasing Adventure!</h1>
+
+  <img src="https://picsum.photos/500?grayscale" alt="Random Photo">
+
+
+  <div class="card">
+    
+      <%= riddle %>
+    
+  </div>
+  
+  <button id="showAnswerBtn">Show Answer</button>
+  <button id="refreshBtn">Refresh</button>
+
+  <p id="answer" style="display: none;"><%= answer %></p>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var showAnswerBtn = document.getElementById('showAnswerBtn');
+    var answerElement = document.getElementById('answer');
+
+    showAnswerBtn.addEventListener('click', function () {
+      // Toggle the visibility of the answer element
+      if (answerElement.style.display === 'none' || answerElement.style.display === '') {
+        answerElement.style.display = 'block';
+      } else {
+        answerElement.style.display = 'none';
+      }
+    });
+
+    refreshBtn.addEventListener('click', function () {
+      location.reload();
+    });
+
+  });
+</script>
+
+<%- include("partials/footer.ejs") %>
+
+
